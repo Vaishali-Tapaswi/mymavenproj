@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<servlet>
+		<servlet-name>BrowseCategories</servlet-name>
+		<servlet-class>com.servlets.BrowseCategories</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddToShoppingCart</servlet-name>
+		<servlet-class>com.servlets.ShoppingCart</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ViewShoppingCart</servlet-name>
+		<servlet-class>com.servlets.ViewShoppingCart</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>BrowseCategories</servlet-name>
+		<url-pattern>/browsecategories</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddToShoppingCart</servlet-name>
+		<url-pattern>/addtocart</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ViewShoppingCart</servlet-name>
+		<url-pattern>/viewshoppingcart</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>welcome.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>

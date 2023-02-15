@@ -9,7 +9,7 @@ public class ShoppingCart extends HttpServlet
 {
 	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
 	{
-		System.out.println("within shopping cart servlet");
+		System.out.println("within shopping cart servlet.....");
 
 		response.setContentType("text/html");
 		ServletOutputStream out = response.getOutputStream();
